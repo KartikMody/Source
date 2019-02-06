@@ -1,0 +1,45 @@
+What does the tool move?
+
+Files and only files. What about list items and workflows? Not supported and likely never will be. If you want to move that kind of stuff, go find a migration tool vendor.
+
+What destinations are supported?
+
+The only supported destination is SharePoint Online and One Drive in Office 365. Want to move between SharePoint 2010 and SharePoint 2016? Great! Go find a migration tool vendor. This tool is not for you.
+
+What sources does it support?
+
+It supports moving files only from SharePoint 2013 and file shares. That is it. Still running SharePoint 2010? Sorry. You’re out of luck.
+
+How does it work?
+
+It more or less uses the same migration API that all of the other ISVs use by uploading your content into Azure BLOB storage and then bulk migrating your files.
+
+Is it secure?
+
+You can decide for yourself, but here is the gist of it. It’s probably more secure than handing over your credentials to a migration tool that doesn’t use OAuth (I’m looking at you Sharegate). Your data is encrypted and uploaded to a dedicated Azure storage account. The tool does this for you and the key is only valid for three days. The Azure blob will be kept for 30 to 90 days and then it is deleted. The files are encrypted at rest with AES 256 and are stored in the same region. If you don’t want to use the storage account the tool creates itself, you can specify your own account and key but you will be responsible for cleaning it up. 
+
+Will it migrate my permissions?
+
+It will migrate basic Read and Write permissions to SharePoint Online if you have Directory Synchronisation configured (which you should).
+
+Does it support bulk migration?
+
+Yes, you can configure bulk migration settings using a CSV file.
+
+Does it support incremental migration?
+
+Yes, it will migrate only the changes if you set the Enable incremental migration setting when you first run the job.
+
+What if my migration job is interrupted? Does it support resume?
+
+Yes, the migration tool will resume any job that has been running for at least 5 minutes.
+
+I don’t want to migrate everything. Are there any filters?
+
+Yes, there are a variety of filters such as dates, extensions, hidden files, etc. Below is the migration settings page.
+How fast is the migration?
+
+This is largely a factor on the size of your files. Basically having more smaller files is slower than having more larger files even if the total volume is the same. For large files, Microsoft quotes the average customer experience at 2 TB / day. For smaller files, the experience is more like 250 GB / day. That’s a big difference I know and every migration is different. If you are planning a large migration, I recommend you do several tests to get a feel for how fast your migration will be. You can read more about maximising migration speed. 
+
+
+

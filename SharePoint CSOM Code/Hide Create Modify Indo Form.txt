@@ -1,0 +1,7 @@
+Use the "Content Editor" or "Script Editor" web part to add the code in the page.
+
+<script type="text/javascript"src="https://code.jquery.com/jquery-2.2.1.min.js"></script> <script type="text/javascript"> $(document).ready(function () { $("td[id='onetidinfoblock1']").remove(); // Created info $("td[id='onetidinfoblock2']").remove(); // Modified info }); </script> 
+
+For custom Edit or Display forms also you can use above code or By hiding <SharePoint:CreatedModifiedInfo> control also you can achieve.
+
+<td class="ms-descriptiontext"nowrap="nowrap"> <!--<SharePoint:CreatedModifiedInfo ControlMode="Edit" runat="server"/>--> </td>

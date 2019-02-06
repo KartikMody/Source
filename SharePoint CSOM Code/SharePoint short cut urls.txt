@@ -1,0 +1,86 @@
+Example: https://Study.com/Sites/Mysite/_layouts/viewlsts.aspx
+
+Storage: /_layouts/15/storman.aspx
+
+View All Site Content: /_layouts/viewlsts.aspx
+
+Create New Site Content: /_layouts/create.aspx
+
+Create New Site: /_layouts/NewsbWeb.aspx
+
+Site Settings page: /_layouts/settings.aspx
+
+Create New Web Part Page: /_layouts/spcf.aspx
+
+Web Part Gallery: /_catalogs/wp/Forms/AllItems.aspx
+
+Web part maintenance mode: append ?contents=1
+
+Add Web Parts Pane: ?ToolPaneView=2
+
+Create New Wiki Page:/_layouts/CreateWebPage.aspx
+
+List Template Gallery: /_catalogs/lt/Forms/AllItems.aspx
+
+Filter toolbar for Lists and libraries: ?Filter=1
+
+Manage User Permissions: /_layouts/user.aspx
+
+Modify Navigation: /_layouts/AreaNavigationSettings.aspx
+
+Modify Site Navigation: /_layouts/SiteNavigationSettings.aspx
+
+Recycle Bin: /_layouts/AdminRecycleBin.aspx
+
+Manage your Alerts: /_layouts/SubEdit.aspx
+
+Create New Alert: /_layouts/SubChoos.aspx
+
+Manage Sites and Workspaces: /_layouts/mngsubwebs.aspx
+
+Master Page Gallery: /_catalogs/masterpage/Forms/AllItems.aspx
+
+Change Site Master Page: /_layouts/ChangeSiteMasterPage.aspx
+
+Manage Site Collection Administrators: /_layouts/mngsiteadmin.aspx
+
+Save Site as Template: /_layouts/savetmpl.aspx
+
+Site Template Gallery: /_catalogs/wt/Forms/Common.aspx
+
+Manage Permission level: /_layouts/role.aspx
+
+Site Column Gallery: /_layouts/mngfield.aspx
+
+Site Content Types: /_layouts/mngctype.aspx
+
+Site Content and Structure Manager: /_layouts/sitemanager.aspx
+
+Site Usage Summary:/_layouts/Usage.aspx
+
+Sign as different User: /_layouts/closeConnection.aspx?loginasanotheruser=true
+
+Workflow history hidden list: /lists/Workflow History
+
+Show Page in Dialog View: ?isdlg=1
+
+Taxonomy Hidden List (MMS): /Lists/TaxonomyHiddenList/AllItems.aspx
+
+Get the version of the SharePoint server: /_vti_pvt/Service.cnf
+
+Manage site collection features: /_layouts/ManageFeatures.aspx?Scope=Site
+
+Manage site features: /_layouts/ManageFeatures.aspx
+
+Enable SharePoint designer: /_layouts/SharePointDesignerSettings.aspx
+
+Set Welcome Page: /_layouts/AreaWelcomePage.aspx
+
+Page Layouts and Site Templates: /_Layouts/AreaTemplateSettings.aspx
+
+Manage Users: /_layouts/user.aspx
+
+User Alerts: /_layouts/sitesubs.aspx
+
+Site Usage Report: /_layouts/UsageDetails.aspx
+

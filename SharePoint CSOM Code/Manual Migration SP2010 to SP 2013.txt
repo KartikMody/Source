@@ -1,0 +1,18 @@
+Create new SharePoint 2013 Farm, Setup necessary configurations.
+
+Backup - Restore SharePoint 2010 Content Databases to SharePoint 2013's SQL Sever (or perform a detach-attach process)
+
+Verify content databases by running: Test-SPContentDatabase from SharePoint 2013 farm.
+
+Syntax: Test-SPContentDatabase -Name <Database name> -WebApplication  <Web-App-URL>
+
+E.g: Test-SPContentDatabase -Name "SP2013_Operations_Content" -WebApplication "http://SharePoint2013.Ravi.com"
+
+4. Attach Content Databases to SharePoint 2013 web application by running: 
+
+Mount-SPContentDatabase
+
+E.g: Mount-SPContentDatabase -name "SP2013_Operations_Content" -DatabaseServer "G1-SP2013-DB01.Crescent.com" -WebApplication "http://SharePoint2013.Ravi.com" -confirm:$false
+
+5. Upgrade Site Collections to move them into SharePoint 2013.
+
